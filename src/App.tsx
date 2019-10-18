@@ -10,14 +10,14 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
+        <button
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={() => {
+            window.location.href = 'https://reactjs.org';
+          }}
         >
           Learn React
-        </a>
+        </button>
       </header>
     </div>
   );
